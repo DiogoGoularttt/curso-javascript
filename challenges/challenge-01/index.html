@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Primeiro Desafio</h1>
+
+    <script>
+      //Algoritmo:
+      /*
+        pedir para o usuário digitar um número
+        converter em numero inteiro
+        pedir para o usuário digitar outro numero
+        converter em numero inteiro
+        mostrar a divisão concatenando com o texto: "A divisão é: "
+        mostrar a multiplicação concatenando com o texto: "A multiplicação é: "
+        mostrar a subtração concatenando com o texto: "A subtração é: "
+        mostrar a soma concatendo com o texto: "A soma é: "
+         */
+
+      let n1 = prompt("Digite um número:");
+      n1 = parseInt(n1);
+
+      let n2 = prompt("Digite outro número:");
+      n2 = parseInt(n2);
+
+      let soma = n1 + n2;
+      let subtracao = n1 - n2;
+      let multiplicacao = n1 * n2;
+      let divisao = n1 / n2;
+
+      let resultado = alert(
+        `
+        A divisão é: ${divisao}. 
+        A multiplicação é: ${multiplicacao}. 
+        A subtração é: ${subtracao}. 
+        A soma é: ${soma}.
+        `,
+      );
+    </script>
+  </body>
+</html>
