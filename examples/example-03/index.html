@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exemplo 3</h1>
+    <button id="btn">Adicionar</button>
+    <div id="value"></div>
+    <script>
+      //Criei essa lógica para quando o usuário clicar no botão ele adiciona +1 ao valor de x
+      const botao = document.querySelector("#btn");
+      const value = document.querySelector("#value");
+      let x = 0;
+
+      botao.addEventListener("click", () => {
+        ++x;
+        value.innerHTML = x;
+      });
+    </script>
+  </body>
+</html>
