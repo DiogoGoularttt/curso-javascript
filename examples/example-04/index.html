@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Boolean, Number e String - typeof</h1>
+    <script>
+      let msg1 = "Olá eu sou 'uma mensagem de texto";
+      let msg2 = 'Olá eu sou "uma mensagem de texto"';
+      let msg3 = "Olá eu sou \"uma mensagem de texto \""; // Método de escapamento
+
+      //Aqui estamos descobrindo o tipo dos dados
+      console.log(typeof 0); // number
+      console.log(typeof "0"); // string
+      console.log(typeof String(0)); // transformamos um number em string através do método String()
+      console.log(typeof false); //boolean
+
+      //Convertendo para Boolean
+      console.log(Boolean("0")) // true
+      console.log(Boolean(0.1)) // true
+      console.log(Boolean(0)) // false
+      console.log(Boolean(undefined)) // false
+      console.log(Boolean(null)) // false
+      console.log(Boolean("")) // false
+
+      // Diferença entre undefined e null
+      /*
+        Os dois são parecidos. Os dois existem para dizer que a variável está vazia.
+        O null é bastante utilizado, pois ali o dev está com a intenção de deixar a variável vazia.
+        Já o undefined não.
+      */    
+
+      let naoDefinido;
+      console.log(naoDefinido)
+
+      let variavelVazia = null;
+      console.log(variavelVazia); 
+
+
+    </script>
+  </body>
+</html>
